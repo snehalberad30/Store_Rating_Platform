@@ -1,43 +1,24 @@
 # 🏪 Store Rating Platform
 
 <p align="center">
-  <h2 align="center">Store Rating Platform</h2>
-  <p align="center">
-    Full-Stack Store Rating & Review Application
-  </p>
+  <img src="screenshots/admin-dashboard.png" width="900">
+</p>
+
+<p align="center">
+  Full-Stack Store Rating and Review Platform
+</p>
+
+<p align="center">
+  Built for the Roxiler FullStack Intern Coding Challenge
 </p>
 
 ---
 
-## 📸 Project Screenshots
+## 📌 Project Overview
 
-### 🔐 Login
+Store Rating Platform is a full-stack web application that allows users to view registered stores and submit ratings from **1 to 5**.
 
-![Login](screenshots/login.png)
-
-### 👨‍💼 Admin Dashboard
-
-![Admin Dashboard](screenshots/admin-dashboard.png)
-
-### 👤 Normal User Dashboard
-
-![User Dashboard](screenshots/user-dashboard.png)
-
-### 🏪 Store Owner Dashboard
-
-![Store Owner Dashboard](screenshots/owner-dashboard.png)
-
----
-
-## 📌 About the Project
-
-Store Rating Platform is a full-stack web application developed for the
-Roxiler FullStack Intern Coding Challenge.
-
-The application allows users to view registered stores and submit ratings
-from 1 to 5.
-
-The system supports three different roles:
+The application provides a single login system with role-based access for:
 
 - System Administrator
 - Normal User
@@ -50,28 +31,90 @@ Each role has different permissions and dashboard functionality.
 ## 🛠️ Tech Stack
 
 ### Frontend
+
 - React.js
 - Axios
 - CSS
+- Vite
 
 ### Backend
+
 - Node.js
 - Express.js
 - JWT Authentication
 - bcrypt.js
 
 ### Database
+
 - MySQL
 
 ---
 
-## 👨‍💼 System Administrator
+# 📸 Application Screenshots
+
+## 🔐 Login Page
+
+<img src="screenshots/login.png" width="900">
+
+---
+
+## 👨‍💼 Admin Dashboard
+
+<img src="screenshots/admin-dashboard.png" width="900">
+
+The administrator dashboard provides:
+
+- Total Users
+- Total Stores
+- Total Ratings
+- Add User
+- Add Admin
+- Add Store Owner
+- Add Store
+- User listing
+- Store listing
+- Filtering
+- Sorting
+- User details
+
+---
+
+## 👤 Normal User Dashboard
+
+<img src="screenshots/user-dashboard.png" width="900">
+
+Normal users can:
+
+- View all registered stores
+- Search stores
+- View overall ratings
+- View their submitted rating
+- Submit ratings
+- Modify ratings
+- Logout
+
+---
+
+## 🏪 Store Owner Dashboard
+
+<img src="screenshots/owner-dashboard.png" width="900">
+
+Store owners can:
+
+- View their store
+- View average rating
+- View total ratings
+- View users who submitted ratings
+- Logout
+
+---
+
+# 👨‍💼 System Administrator
+
+The System Administrator can:
 
 - Login
-- Dashboard
-- View total users
-- View total stores
-- View total ratings
+- View dashboard statistics
 - Add normal users
 - Add administrators
 - Add store owners
@@ -79,82 +122,62 @@ Each role has different permissions and dashboard functionality.
 - Assign stores to store owners
 - View users
 - View stores
-- Filter users and stores
-- Sort listings
-- View user details
+- Filter users by:
+  - Name
+  - Email
+  - Address
+  - Role
+- Filter stores by:
+  - Name
+  - Email
+  - Address
+- Sort listings in ascending and descending order
+- View detailed user information
+- View store owner information and associated store ratings
 - Logout
 
 ---
 
-## 👤 Normal User
+# 👤 Normal User
+
+Normal users can:
 
 - Sign up
 - Login
-- View all stores
+- View all registered stores
 - Search stores by name
 - Search stores by address
-- View overall rating
-- Submit rating from 1 to 5
-- Modify submitted rating
+- View store address
+- View overall store rating
+- View their submitted rating
+- Submit a rating between 1 and 5
+- Modify their submitted rating
+- Change their password
 - Logout
 
 ---
 
-## 🏪 Store Owner
+# 🏪 Store Owner
+
+Store owners can:
 
 - Login
+- View their store
 - View average store rating
-- View total ratings
+- View total number of ratings
 - View users who submitted ratings
+- Change their password
 - Logout
 
 ---
 
-## ✅ Form Validation
+# ⭐ Rating System
 
-- Name: 20–60 characters
-- Address: Maximum 400 characters
-- Password: 8–16 characters
-- Password must contain at least one uppercase letter
-- Password must contain at least one special character
-- Email validation
-- Rating: 1–5
-
----
-
-## 🔐 Authentication & Security
-
-- JWT-based authentication
-- Role-based authorization
-- bcrypt password hashing
-- Protected API routes
-- Input validation
-
----
-
-## 📂 Project Structure
+Users can submit ratings between:
 
 ```text
-store-rating-platform/
-│
-├── backend/
-│   ├── src/
-│   │   ├── controllers/
-│   │   ├── middleware/
-│   │   ├── routes/
-│   │   ├── services/
-│   │   └── server.js
-│   └── package.json
-│
-├── frontend/
-│   ├── src/
-│   ├── public/
-│   └── package.json
-│
-├── screenshots/
-│   ├── login.png
-│   ├── admin-dashboard.png
-│   ├── user-dashboard.png
-│   └── owner-dashboard.png
-│
-└── README.md
+1 ⭐
+2 ⭐⭐
+3 ⭐⭐⭐
+4 ⭐⭐⭐⭐
+5 ⭐⭐⭐⭐⭐
