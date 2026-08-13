@@ -1,8 +1,53 @@
-# Store Rating Platform
+# 🏪 Store Rating Platform
 
-A full-stack web application developed for the Roxiler FullStack Intern Coding Challenge.
+<p align="center">
+  <h2 align="center">Store Rating Platform</h2>
+  <p align="center">
+    Full-Stack Store Rating & Review Application
+  </p>
+</p>
 
-## Tech Stack
+---
+
+## 📸 Project Screenshots
+
+### 🔐 Login
+
+![Login](screenshots/login.png)
+
+### 👨‍💼 Admin Dashboard
+
+![Admin Dashboard](screenshots/admin-dashboard.png)
+
+### 👤 Normal User Dashboard
+
+![User Dashboard](screenshots/user-dashboard.png)
+
+### 🏪 Store Owner Dashboard
+
+![Store Owner Dashboard](screenshots/owner-dashboard.png)
+
+---
+
+## 📌 About the Project
+
+Store Rating Platform is a full-stack web application developed for the
+Roxiler FullStack Intern Coding Challenge.
+
+The application allows users to view registered stores and submit ratings
+from 1 to 5.
+
+The system supports three different roles:
+
+- System Administrator
+- Normal User
+- Store Owner
+
+Each role has different permissions and dashboard functionality.
+
+---
+
+## 🛠️ Tech Stack
 
 ### Frontend
 - React.js
@@ -18,20 +63,16 @@ A full-stack web application developed for the Roxiler FullStack Intern Coding C
 ### Database
 - MySQL
 
-## User Roles
+---
 
-The application supports three roles:
+## 👨‍💼 System Administrator
 
-1. System Administrator
-2. Normal User
-3. Store Owner
-
-## Features
-
-### System Administrator
-- Admin login
-- Dashboard with total users, stores and ratings
-- Add users
+- Login
+- Dashboard
+- View total users
+- View total stores
+- View total ratings
+- Add normal users
 - Add administrators
 - Add store owners
 - Add stores
@@ -43,49 +84,77 @@ The application supports three roles:
 - View user details
 - Logout
 
-### Normal User
-- User registration
-- User login
+---
+
+## 👤 Normal User
+
+- Sign up
+- Login
 - View all stores
-- Search stores by name and address
-- View overall store rating
+- Search stores by name
+- Search stores by address
+- View overall rating
 - Submit rating from 1 to 5
 - Modify submitted rating
 - Logout
 
-### Store Owner
-- Store owner login
+---
+
+## 🏪 Store Owner
+
+- Login
 - View average store rating
 - View total ratings
 - View users who submitted ratings
 - Logout
 
-## Validation
+---
+
+## ✅ Form Validation
 
 - Name: 20–60 characters
-- Address: maximum 400 characters
+- Address: Maximum 400 characters
 - Password: 8–16 characters
-- Password requires at least one uppercase letter
-- Password requires at least one special character
+- Password must contain at least one uppercase letter
+- Password must contain at least one special character
 - Email validation
 - Rating: 1–5
 
-## Authentication
+---
 
-JWT-based authentication is implemented with role-based authorization.
+## 🔐 Authentication & Security
 
-Passwords are securely hashed using bcrypt.
+- JWT-based authentication
+- Role-based authorization
+- bcrypt password hashing
+- Protected API routes
+- Input validation
 
-## Project Structure
+---
+
+## 📂 Project Structure
 
 ```text
 store-rating-platform/
+│
 ├── backend/
 │   ├── src/
-│   ├── package.json
-│   └── ...
+│   │   ├── controllers/
+│   │   ├── middleware/
+│   │   ├── routes/
+│   │   ├── services/
+│   │   └── server.js
+│   └── package.json
 │
-└── frontend/
-    ├── src/
-    ├── package.json
-    └── ...
+├── frontend/
+│   ├── src/
+│   ├── public/
+│   └── package.json
+│
+├── screenshots/
+│   ├── login.png
+│   ├── admin-dashboard.png
+│   ├── user-dashboard.png
+│   └── owner-dashboard.png
+│
+└── README.md
